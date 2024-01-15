@@ -21,7 +21,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: hongbeomsun/github-actions-app
-        tags: v1.0.0
+        tags: ${{ github.sha }}, v1.0.0
         registry: docker.io
         username: hongbeomsun
         password: dckr_pat_0mGPZ0crsB9-wsG41N7pORRIR3Y
